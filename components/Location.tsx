@@ -52,16 +52,19 @@ const Location: React.FC = () => {
                 </div>
             </div>
 
-            {/* Storefront Image */}
+            {/* Storefront / Banner Image */}
             <div className="h-[400px] md:h-auto bg-[#111] relative overflow-hidden">
-                 <img 
-                    src="/images/store-front.jpg" 
-                    alt="Fachada Postura Modas" 
-                    className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity duration-700"
-                    onError={(e) => {
-                        e.currentTarget.src = "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?q=80&w=2070&auto=format&fit=crop";
-                    }}
-                />
+                <picture>
+                    <source srcSet="/assets/images/banners/banner4.jpeg" type="image/jpeg" />
+                    <img
+                        src="/assets/images/banners/banner4.jpeg"
+                        alt="Banner interno Postura Modas"
+                        className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity duration-700"
+                        onError={(e) => {
+                            e.currentTarget.src = "/assets/images/banners/banner4.jpeg"; // Fallback local image
+                        }}
+                    />
+                </picture>
                 <div className="absolute inset-0 bg-black/10 pointer-events-none"></div>
             </div>
 

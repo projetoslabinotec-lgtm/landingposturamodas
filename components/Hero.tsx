@@ -9,7 +9,7 @@ const Hero: React.FC = () => {
       {/* Background Image - Local File */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/hero-bg.jpg"
+          src="/assets/images/hero-bg.jpg"
           alt="Homem com estilo casual e óculos na Postura Modas"
           className="w-full h-full object-cover object-top opacity-80"
           onError={(e) => {

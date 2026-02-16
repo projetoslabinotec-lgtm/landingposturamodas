@@ -10,12 +10,12 @@ const SEO: React.FC = () => {
         </p>
         <p>
             Baixe nosso aplicativo para ter acesso ao catálogo exclusivo de ternos, camisas sociais e acessórios de alto padrão.
-            Localizada em {`São Paulo`}, oferecemos atendimento VIP via WhatsApp.
+            Localizada em {`Entre Rios - Bahia`}, oferecemos atendimento VIP via WhatsApp.
         </p>
         <h3>Estilo e Autoridade</h3>
         <ul>
             <li>Consultoria de Imagem Masculina</li>
-            <li>Roupas para Advogados e Executivos</li>
+            <li>Roupas para Homens Livres</li>
             <li>Moda Masculina Premium</li>
             <li>Clube de Vantagens Postura Modas</li>
         </ul>
