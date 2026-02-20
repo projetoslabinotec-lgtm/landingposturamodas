@@ -9,6 +9,6 @@ services:
     restart: unless-stopped
     # Use 'expose' em vez de 'ports' no Easypanel
     expose:
-      - "80"
+      - "5174"
     environment:
       - GEMINI_API_KEY=${GEMINI_API_KEY}

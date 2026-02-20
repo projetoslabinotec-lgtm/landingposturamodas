@@ -22,7 +22,7 @@ FROM nginx:alpine
 
 # Configuração essencial para rotas do React (evita erro 404 ao dar F5)
 RUN echo 'server { \
-    listen 80; \
+    listen 5174; \
     location / { \
         root   /usr/share/nginx/html; \
         index  index.html index.htm; \
@@ -34,7 +34,7 @@ RUN echo 'server { \
 RUN rm -rf /usr/share/nginx/html/*
 COPY --from=builder /app/dist /usr/share/nginx/html
 
-# Expõe a porta 80 (O Easypanel vai transformar isso em HTTPS externamente)
-EXPOSE 80
+# Expõe a porta 5174 (O Easypanel vai transformar isso em HTTPS externamente)
+EXPOSE 5174
 
 CMD ["nginx", "-g", "daemon off;"]
