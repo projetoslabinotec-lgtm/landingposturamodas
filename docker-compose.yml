@@ -1,4 +1,4 @@
-services:
+ services:
   react-frontend:
     build:
       context: .
@@ -7,8 +7,8 @@ services:
         # Puxa a chave do ambiente (ou do painel) e injeta no momento do build do Vite
         - GEMINI_API_KEY=${GEMINI_API_KEY}
     restart: unless-stopped
-    # Use 'expose' em vez de 'ports' no Easypanel
-    expose:
-      - "5174"
+    # Mapeia a porta 5174 do container para a porta 5174 do host
+    ports:
+      - "5174:5174"
     environment:
       - GEMINI_API_KEY=${GEMINI_API_KEY}
