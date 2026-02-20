@@ -116,11 +116,11 @@ export const GALLERY_ITEMS: Product[] = [
 
 export const SHOWCASE_ITEMS = [
   { id: 1, image: "/assets/images/products/aztec.jpeg", title: "Aztec" },
-  { id: 2, image: "/assets/images/products/aztec (2).jpeg", title: "Aztec Vol. 2" },
-  { id: 3, image: "/assets/images/products/aztec (3).jpeg", title: "Aztec Vol. 3" },
+  { id: 2, image: "/assets/images/products/aztec (2).jpeg", title: "Aztec Casual" },
+  { id: 3, image: "/assets/images/products/aztec (3).jpeg", title: "Aztec Jeans" },
   { id: 4, image: "/assets/images/products/bermuda.jpeg", title: "Bermudas Confort" },
   { id: 5, image: "/assets/images/products/bermuda2.jpeg", title: "Bermudas Premium" },
-  { id: 6, image: "/assets/images/products/blusacasual.jpeg", title: "Blusa Casual" },
+  { id: 6, image: "/assets/images/products/blusacasual.jpeg", title: "Blusas Casuais e Confortáveis" },
   { id: 7, image: "/assets/images/products/conceito.jpeg", title: "Conceito" },
   { id: 8, image: "/assets/images/products/estiloconceito.jpeg", title: "Estilo Conceito" },
   { id: 9, image: "/assets/images/products/estiloconceito2.jpeg", title: "Estilo Conceito Vol. 2" },
@@ -154,4 +154,48 @@ export const TESTIMONIALS: Testimonial[] = [
     text: "Gosto da liberdade que as roupas me dão. OGOCHI e John Pool são minhas preferidas. Atendimento top em Entre Rios.",
     image: "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?q=80&w=200&auto=format&fit=crop",
   }
+];
+
+export const MOSTRUARIO_CATEGORIES = [
+  {
+    id: 'bermudas',
+    title: 'Bermudas',
+    items: [
+      { id: 'b1', image: '/assets/images/products/bermuda.jpeg', title: 'Bermuda Confort' },
+      { id: 'b2', image: '/assets/images/products/aztec (2).jpeg', title: 'Bermuda AZTEC casual' },
+      { id: 'b3', image: '/assets/images/products/aztec (3).jpeg', title: 'Bermuda AZTEC Jeans' },
+      { id: 'b4', image: '/assets/images/products/aztec.jpeg', title: 'Bermuda Jeans AZTEC' },
+      { id: 'b5', image: '/assets/images/products/bermuda2.jpeg', title: 'Bermuda Conceito' },
+    ],
+  },
+  {
+    id: 'calcas',
+    title: 'Calças',
+    items: [
+      { id: 'c1', image: '/assets/images/products/calcas_estilolevis.jpeg', title: "Calça Levi's" },
+      { id: 'c2', image: '/assets/images/products/calca.jpeg', title: "Calça Jeans Levi's" },
+      { id: 'c3', image: '/assets/images/products/Calcas_1.jpeg', title: 'Calças Sociais' },
+      { id: 'c4', image: '/assets/images/products/Calsas.jpeg', title: 'Calças Sociais' },
+    ],
+  },
+  {
+    id: 'camisas',
+    title: 'Camisas',
+    items: [
+      { id: 'm1', image: '/assets/images/products/blusacasual.jpeg', title: 'Blusa Casual' },
+      { id: 'm2', image: '/assets/images/products/estiloconceito.jpeg', title: 'Camisa Conceito' },
+      { id: 'm3', image: '/assets/images/products/estiloconceito2.jpeg', title: 'Camisa Conceito' },
+      { id: 'm4', image: '/assets/images/products/estiloconceito3.jpeg', title: 'Camisa Conceito' },
+      { id: 'm5', image: '/assets/images/products/estiloconceito4.jpeg', title: 'Camisa Conceito' },
+      { id: 'm6', image: '/assets/images/products/estiloogchi.jpeg', title: 'Camisa OGOCHI' },
+    ],
+  },
+  {
+    id: 'sandalias',
+    title: 'Sandálias',
+    items: [
+      { id: 's1', image: '/assets/images/products/sandalia1.jpeg', title: 'Sandália Confort' },
+      { id: 's2', image: '/assets/images/products/sandalia2.jpeg', title: 'Sandália Premium' },
+    ],
+  },
 ];
