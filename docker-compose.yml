@@ -7,9 +7,8 @@ services:
         # Puxa a chave do ambiente (ou do painel) e injeta no momento do build do Vite
         - GEMINI_API_KEY=${GEMINI_API_KEY}
     restart: unless-stopped
-    ports:
-      # Mapeia a porta 3000 externa para a porta 80 interna do Nginx
-      - "3000:80"
+    # Use 'expose' em vez de 'ports' no Easypanel
+    expose:
+      - "80"
     environment:
-      # Opcional no Nginx, mas útil caso você adicione ferramentas de monitoramento depois
       - GEMINI_API_KEY=${GEMINI_API_KEY}
